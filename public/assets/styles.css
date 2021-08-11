@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+}
+h1 {
+    font-family: "Lucida Grande";
+    background: rgb(22, 166, 156);
+    color: white;
+    font-size: 30px;
+    padding: 15px;
+}
+a {
+    font-size: 18px;
+    text-transform: capitalize;
+
+}
+a:hover {
+    color: #62a4e9;
+}
+a, p {
+    padding-left: 10px;
+    text-decoration-line: none;
+    font-family: Helvetica;
+}
+
+#content {
+    padding-top: 30px;
+    border-left: 10px solid #e9e9e9;
+    border-right: 10px solid #e9e9e9;
+    border-bottom: 10px solid lightgray;
+}
+
+#dateTime {
+    padding-bottom: 15px;
+
+}

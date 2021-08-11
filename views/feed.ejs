@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <link href="/public/assets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="header">
+            <h1>Welcome to TechTarget Article List</h1>
+        </div>
+        <div id="content">
+            <% for(var i = 0; i < itemArr.length; i++) { %>
+                <a href="<%= itemArr[i].link; %>">
+                    <%= itemArr[i].title%></a>
+                <br>
+                <br>
+                <p id="dateTime"><%=itemArr[i].pubDate%></p>
+                <br>
+                <br>
+            <%}%>
+        </div>
+    </body>
+</html>

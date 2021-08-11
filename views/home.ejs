@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TechTarget RSS Site</title>
+    <meta charset="UTF-8">
+</head>
+<body onload="langRedirect()">
+    <h1>Welcome to TT RSS list</h1>
+    <p id="demo"></p>
+    <script>
+       function langRedirect() {
+           var x = "" + navigator.language;
+
+           document.getElementById("demo").innerHTML = x.slice(0, 2);
+           location.replace("/" + x.slice(0,2));
+       }
+    </script>
+</body>
+</html>
+
