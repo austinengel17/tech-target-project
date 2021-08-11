@@ -1,4 +1,4 @@
-//loading local modules
+//loading controllers
 const englishController = require("./controllers/englishController");
 const spanishController = require("./controllers/spanishController");
 const frenchController = require("./controllers/frenchController");
@@ -16,13 +16,17 @@ const app = express();
 app.set('view engine', 'ejs');
 
 
-
+//homepage endpoint
 app.get('/', function(req,res){
     res.render('home');
 })
 
+
+//map to public folder
 app.use('/public', express.static('public'));
 
+
+//firing controllers
 englishController(app);
 spanishController(app);
 frenchController(app);

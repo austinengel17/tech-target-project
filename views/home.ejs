@@ -3,15 +3,16 @@
 <head>
     <title>TechTarget RSS Site</title>
     <meta charset="UTF-8">
+
+    <link href="/public/assets/styles.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body onload="langRedirect()">
-    <h1>Welcome to TT RSS list</h1>
-    <p id="demo"></p>
+    <h1>Welcome to TechTarget Content list</h1>
+
     <script>
        function langRedirect() {
            var x = "" + navigator.language;
-
-           document.getElementById("demo").innerHTML = x.slice(0, 2);
            location.replace("/" + x.slice(0,2));
        }
     </script>
