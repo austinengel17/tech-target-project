@@ -12,7 +12,6 @@ module.exports = function(app){
 
     app.get('/es', async function(req, res){
 
-
         //build article object array
         let itemArr = await articleArrayBuilder(rssArr);
 
