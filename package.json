@@ -15,5 +15,9 @@
     "node-fetch": "^2.6.1",
     "save": "^2.4.0",
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3"
   }
 }
