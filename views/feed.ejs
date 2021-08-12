@@ -4,7 +4,7 @@
     </head>
     <body>
         <div id="header">
-            <h1>Welcome to TechTarget Content List</h1>
+            <h1 id="heading"></h1>
         </div>
         <div id="content">
             <% for(var i = 0; i < itemArr.length; i++) { %>
@@ -17,5 +17,13 @@
                 <br>
             <%}%>
         </div>
+
+        <script>
+            if (window.location.pathname === "/fr") document.getElementById("heading").innerHTML = 'Bienvenue dans la liste de contenu TechTarget';
+            else if (window.location.pathname === "/de") document.getElementById("heading").innerHTML = 'Willkommen bei der Inhaltsliste von TechTarget';
+            else if (window.location.pathname === "/it") document.getElementById("heading").innerHTML = 'Benvenuto nell\'elenco dei contenuti di TechTarget';
+            else if (window.location.pathname === "/es") document.getElementById("heading").innerHTML = 'Bienvenido a la lista de contenido de TechTarget';
+            else document.getElementById("heading").innerHTML = 'Welcome to TechTarget Content List';
+        </script>
     </body>
 </html>
