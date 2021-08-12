@@ -1,17 +1,17 @@
-
 //loading local modules
 const articleArrayBuilder = require('../tools/articleArrayBuilder');
 const removeDuplicates = require('../tools/removeDuplicates');
 
 
-
 module.exports = function(app){
-    const rssArr =[
+
+    const rssArr = [
         'https://searchsecurity.techtarget.com/rss/ContentSyndication.xml',
         'https://searchsecurity.techtarget.com/rss/Network-Security-Tactics.xml',
         'https://searchsecurity.techtarget.com/rss/Security-New-White-Papers.xml',
         'https://searchsecurity.techtarget.com/rss/Security-Bytes.xml'
     ];
+
     app.get('/en', async function(req, res){
 
         //build article object array

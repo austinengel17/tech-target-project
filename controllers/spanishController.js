@@ -5,11 +5,13 @@ const removeDuplicates = require('../tools/removeDuplicates');
 
 
 module.exports = function(app){
+
+    const rssArr =[
+        `https://searchdatacenter.techtarget.com/es/editorspicks`
+    ]
+
     app.get('/es', async function(req, res){
 
-        const rssArr =[
-            `https://searchdatacenter.techtarget.com/es/editorspicks`
-        ]
 
         //build article object array
         let itemArr = await articleArrayBuilder(rssArr);

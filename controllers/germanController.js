@@ -4,13 +4,14 @@ const removeDuplicates = require('../tools/removeDuplicates');
 
 
 module.exports = function(app){
+
+    const rssArr = [
+        'https://www.computerweekly.com/de/rss/Security.xml',
+        'https://www.computerweekly.com/de/rss/RSS-Feed-von-ComputerWeeklyde.xml'
+    ];
+
     app.get('/de', async function(req, res){
 
-
-        const rssArr = [
-            'https://www.computerweekly.com/de/rss/Security.xml',
-            'https://www.computerweekly.com/de/rss/RSS-Feed-von-ComputerWeeklyde.xml'
-        ];
 
         //build article object array
         let itemArr = await articleArrayBuilder(rssArr);
