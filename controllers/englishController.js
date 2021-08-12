@@ -9,7 +9,8 @@ module.exports = function(app){
     const rssArr =[
         'https://searchsecurity.techtarget.com/rss/ContentSyndication.xml',
         'https://searchsecurity.techtarget.com/rss/Network-Security-Tactics.xml',
-        'https://searchsecurity.techtarget.com/rss/Security-New-White-Papers.xml'
+        'https://searchsecurity.techtarget.com/rss/Security-New-White-Papers.xml',
+        'https://searchsecurity.techtarget.com/rss/Security-Bytes.xml'
     ];
     app.get('/en', async function(req, res){
 
